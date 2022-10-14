@@ -1,10 +1,10 @@
 extends layout
 
 block content
-    row.page-header 
+     row.page-header 
       .col-lg-12 
         h1  Ayvalık Tost'a Yorum Yap 
-    row 
+     .row 
       .col-xs-12.col-md-6
         form.form-horizontal(action='/mekan',method='get',role='form',id='yorumEkle')
           .form-group
@@ -20,10 +20,10 @@ block content
                 option  3
                 option  2
                 option  1
-          .from-group
+          .form-group
             label.col-sm-2.control-label(for='yorum') Yorum 
             .col-sm-10
               textarea#review.form-control(name='yorum',rows='5')
-          button.btn.btn-default.pull-right() Yorumu Ekle
+          button.btn.btn-default.pull-right() Yorum Ekle
       .col-xs-12.col-md-4
 
