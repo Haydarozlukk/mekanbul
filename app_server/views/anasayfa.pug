@@ -1,70 +1,25 @@
 extends layout
+include fonksiyonlar/yildiz
 
 block content
-  #banner.page-header 
-    .row
-      .col-lg-6 
-        h1    
-          | MekanBul 
-          small &nbsp; Civardaki Mekanları Kesfet 
-  .row 
-    .row.list-group  
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4 
-          a(href='/mekan')  Ayvalık Tost
-          small &nbsp; 
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-          span.glyphicon.glyphicon-star-empty
-        span.badge.pull.right.badge-default 1km
-        p.address Iyas Bulvar
-        p 
-          span.label.label-warning Tost
-          | &nbsp;
-          span.label.label-warning  Kumru
-          | &nbsp;
-          span.label.label-warning  Yengen
-
+  #banner.page-header
+    .row 
+      .col-lg-6
+        h1 
+          | #{sayfaBaslik.siteAd}
+          small  &nbsp; #{sayfaBaslik.slogan}
   .row
-    .row.list-group 
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4  
-          a(href='/mekan')  Burç Fırın
-          small &nbsp; 
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-        span.badge.pull.right.badge-default 3km
-        p.address Fatih Mah.
-        p 
-          span.label.label-warning Pasta
-          | &nbsp;
-          span.label.label-warning Sütlü Tatlı
-          | &nbsp;
-          span.label.label-warning Şerbetli Tatlı
-    
-  .row 
-    .row.list-group 
-    .col-xs-12.col-sm-12 
-      .col-xs-12.list-group-item 
-        h4 
-          a(href='/mekan')  Mackbear Coffee
-          small &nbsp;
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star
-          span.glyphicon.glyphicon-star-empty
-        span.badge.pull.right.badge-default 5km
-        p.address Modern Evler Mah.
-        p 
-          span.label.label-warning Kahve
-          | &nbsp;
-          span.label.label-warning Kurabiye 
-            
+    each mekan in mekanlar
+      .row.list-group
+      .col-xs-12.col-sm-12  
+        .col-xs-12.list-group-item
+          h4
+            a(href= '/mekan')  #{mekan.ad} 
+            small &nbsp;
+            +puanOlustur(mekan.puan)
+          span.badge.pull-right.badge-default #{mekan.mesafe}
+          p.address #{mekan.adres}
+          p
+            each imkan in mekan.imkanlar
+              span.label.label-warning #{imkan}
+              | &nbsp;
