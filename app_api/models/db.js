@@ -1,6 +1,6 @@
+var dbURI="mongodb+srv://Haydar:mekanbul123@mekanbul.eoxzoum.mongodb.net/?retryWrites=true&w=majority";
 var mongoose=require("mongoose");
-var dbURI = 'mongodb://localhost/mekanbul'; 
-//var dbURI="mongodb+srv://Haydar:Sifre_123>@mekanbul.ydiupvc.mongodb.net/?retryWrites=true&w=majority";
+//var dbURI = 'mongodb://127.0.0.1/mekanbul'; 
 mongoose.connect(dbURI);
 
 function kapat(msg,callback){
@@ -18,7 +18,7 @@ process.on("SIGINT",function(){
 
 
 mongoose.connection.on("connected",function(){
-    console.log(dbURI+"adresindeki veritabanına bağandı.");
+    console.log(dbURI+"adresindeki veritabanına bağlandı.");
 })
 
 
@@ -27,7 +27,7 @@ mongoose.connection.on("disconnected",function(){
 })
 
 
-mongoose.connection.on("connected",function(){
+mongoose.connection.on("error",function(){
     console.log("Bağlantı hatası.");
 })
 
