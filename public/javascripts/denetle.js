@@ -11,6 +11,7 @@ $('#yorumEkle').submit(function (e) {
    }
  });
 
+ 
 
 $('#mekanEkle').submit(function (e) {
   $('.alert.alert-danger').hide();
