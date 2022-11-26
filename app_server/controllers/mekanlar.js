@@ -68,7 +68,7 @@ const mekanBilgisi = function(req, res, next) {
           },
           {
             "yorumYapan": "Sultan Özlük",
-            "yorumMetni": "Berbattı",
+            "yorumMetni": "Berbatttı",
             "tarih": "21 Ekim 2022",
             "puan": "2"
           }
