@@ -51,6 +51,7 @@ const mekanlariListele = async (req, res) => {
                 puan: mekan.puan,
                 imkanlar: mekan.imkanlar,
                 _id: mekan._id,
+
             };
         });
         cevapOlustur(res, 200, mekanlar);
