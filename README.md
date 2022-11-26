@@ -1,3 +1,15 @@
+# Mekanbul REST API Testleri
+
+[1. Collection : MekanBul API Testleri](https://mekanbul-2.haydarozlukk.repl.co/api/mekanlar?enlem=30&boylam=40)
+![1. Collection : MekanBul API Testleri](./resimler/CollectionApiTest.png)
+
+[2. API Testleri](https://mekanbul-2.haydarozlukk.repl.co/api/mekanlar/637cc862647dc8b77eb0a81c)
+![2. API Testleri](./resimler/ApiTest.png)
+
+
+
+
+
 # Mekanbul REST API Adresleri
 
 1. [Girilen Konum Civarındaki Mekanları Listele](https://mekanbul-2.haydarozlukk.repl.co/api/mekanlar?enlem=30&boylam=40)
