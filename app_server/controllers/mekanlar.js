@@ -62,7 +62,7 @@ const mekanBilgisi = function(req, res, next) {
         "yorumlar": [
           {
             "yorumYapan": "Haydar Özlük",
-            "yorumMetni": "Harikaydıı",
+            "yorumMetni": "Harikaydı",
             "tarih": "21 Ekim 2022",
             "puan": "5"
           },
