@@ -1,7 +1,9 @@
-# MekanBul REST API TESTLERİ
+# MekanlarıListele Testleri
 
 [Yakınlardaki Mekanları Listele - Replit Adresi](https://mekanbul-3.haydarozlukk.repl.co/?enlem=37&boylam=35)
 ![Yakınlardaki Mekanları Listele - Replit Adresi](./resimler/MekanlarıListele.png)
+
+# MekanBul REST API TESTLERİ
 
 ### 1. Collection : MekanBul API Testleri
 ![1](/resimler/CollectionApiTest.png)
